@@ -1,3 +1,49 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.register {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #FF5A5F;
+  opacity: 80%;
+  height: 3em;
+  padding-top: 1.4em;
+  padding-left: 80vw;
+
+
+  a {
+    color: #fff;
+  }
+}
+
+form {
+  position: relative;
+  top: 5em;
+
+  .city-name {
+    position: relative;
+    text-align:left;
+    width: 50%;
+    margin: 4em;
+    padding: 0.9em;
+    left: 30vh;
+  }
+
+  .search {
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: #FF5A5F;
+    padding: 1em 2em;
+    border-radius: 2px;
+    color: #ffffff;
+    left: 25vh;
+
+  }
+}
