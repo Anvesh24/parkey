@@ -1,22 +1,43 @@
-<row class = "register"> 
-<div class = "col-xs-12">
-<a class="login" href="">LOG IN/</a>
-<a class="signup" href="">SIGN UP</a>
+<div class = "home container-fluid">
+ <%= render 'layouts/header' %>
+ <div class = "row ">
+  <form action="" class="action">
+    <input class="city-name" name="name" id="name" placeholder="Enter city name" type="text" required>
+    <button class = "search" type='button'>Search</button>
+  </form>
 </div>
-</row>
-<form action="" class="action">
-<input class="city-name" name="name" id="name" placeholder="Enter city name" type="text" required>
-<button class = "search" type='button'>Search</button>
+<div class = "row steps">
+  <div class = "row first-step"><i class="fa fa-car"></i>
+    <div class="col-xs-6">
+    <div class = "step-box"><h2 class = "each-step">Step 1</h2></div>
+    </div>
+    <div class="col-xs-6">
+      <p>Enter your parking point of interest in the search bar,<br> and select your vehicle type.</p>
+    </div>
+  </div>
+  <div class = "row second-step">
+    <div class="col-xs-6">
+      <p>View your options and filter through the<br> list.Book a spot.</p>
+    </div>
+    <div class = "col-xs-6">
+      <div class = "step-box"><h2 class = "each-step ">Step 2</h2></div>
 
-</form>
-<section class = "working">
-<row class = "app-work">
-<div class></div>
-</row>
-</section>
+    </div>
+  </div>
+  <div class = "row third-step">
+    <div class="col-xs-6">
+      <div class = "step-box"><h2 class = "each-step ">Step 3</h2></div>
+    </div>
+    <div class = "col-xs-6">
+      <p>Conveniently park when you <br>arrive.</p>
+    </div>
+  </div>
+</div>
 
-<section class = "contact-us">
-  <row class>
-     <div class></div>   
-  </row>
-</section>
+<!-- <div class = "row contactus">
+  <div class = "aboutus col-xs-3 col-xs-offset-1"><h4>About us</h4></div>
+  <div class = "contact col-xs-3 col-xs-offset-1"><h4>Contact</h4></div>
+  <div class = "faq col-xs-3 col-xs-offset-1"><h4>FAQ</h4></div>
+</div>
+-->
+</div>

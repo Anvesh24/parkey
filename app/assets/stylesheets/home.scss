@@ -1,6 +1,17 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  width: 100%;
+}
+
+.home{
+  background-image: url('car.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .register {
   width: 100%;
   position: fixed;
@@ -9,12 +20,9 @@
   top: 0;
   z-index: 1000;
   background-color: #FF5A5F;
-  opacity: 80%;
-  height: 3em;
   padding-top: 1.4em;
+  padding-bottom: 1.4em;
   padding-left: 80vw;
-
-
   a {
     color: #fff;
   }
@@ -22,7 +30,8 @@
 
 form {
   position: relative;
-  top: 5em;
+  margin-top: 30vh;
+  margin-bottom: 10vh;
 
   .city-name {
     position: relative;
@@ -35,15 +44,84 @@ form {
 
   .search {
     position: relative;
+    padding: 1em 2em;
+    border-bottom: 5vh;
     text-decoration: none;
     outline: none;
     border: none;
     text-align: center;
     background-color: #FF5A5F;
-    padding: 1em 2em;
     border-radius: 2px;
     color: #ffffff;
     left: 25vh;
-
   }
 }
+
+.steps {
+  // background-color: gray;
+  margin-top: 35vh;
+  height: 40vh;
+  left: 0;
+  right: 0;
+
+  .first-step {
+    padding-top: 10vh;
+    height: 30vh;
+    width: 100%;
+    background-color: #DCDCDC;
+
+    h2 {
+      font-size: 4vh;
+      margin-left: 10vh;
+    }
+
+    p {
+      font-size: 3.5vh;
+      margin-left: 10vh;
+    }
+  }
+
+  .second-step {
+    padding-top: 10vh;
+    height: 30vh;
+    width: 100%;
+    background-color: #B3B3B3;
+
+    h2 {
+      font-size: 4vh;
+      margin-left: 10vh;
+    }
+
+    p {
+      font-size: 3.5vh;
+      margin-left: 10vh;
+    }
+  }
+
+  .third-step {
+    padding-top: 10vh;
+    height: 30vh;
+    width: 100%;
+    background-color: #9C9C9C;
+
+    h2 {
+      font-size: 4vh;
+      margin-left: 10vh;
+    }
+
+    p {
+      font-size: 3.5vh;
+      margin-left: 10vh;
+    }
+  }
+}
+
+.each-step{
+ padding-bottom: 1vh;
+
+}
+
+
+.contactus {
+  height: 20vh;
+} 
