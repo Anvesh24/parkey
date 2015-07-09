@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'parkings/new'
+
   devise_for :users
   root 'home#index'
 
