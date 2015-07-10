@@ -1,0 +1,26 @@
+<div class="container show">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">  
+    <ul>
+      <li>
+      <strong>Street:</strong>
+      <%= @parking.street %>        
+      </li>
+      <li>
+      <strong>Latitude:</strong>
+      <%= @parking.latitude %>        
+      </li>
+      <li>
+      <strong>Longitude:</strong>
+      <%= @parking.longitude %>
+      </li>
+    </ul>    
+    <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?size=600x400&sensors=false&zoom=16&markers=#{@parking.latitude}%2C#{@parking.longitude}" %>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <%= link_to "Edit", edit_parking_path(@parking) %>
+  <%= link_to "Destroy", @parking, :confirm => 'Are you sure?', :method => :delete %>
+</div>

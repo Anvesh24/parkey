@@ -1,2 +1,21 @@
-<h1>Parkings#new</h1>
-<p>Find me in app/views/parkings/new.html.erb</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h2>Please fill in the details</h2>
+
+      <%= simple_form_for Parking.new do |f| %>
+        <%= f.input :area, label: 'Area(in sft)' %>
+        
+        <%= f.input :description, as: :text  %>
+        <%= f.input :street, label: 'street' %>
+        <%= f.input :city, label: 'city' %>
+        <%= f.input :state, label: 'state' %>
+        <%= f.button :submit %>
+      <% end %>
+      
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>

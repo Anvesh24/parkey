@@ -1,0 +1,16 @@
+<%= form_tag parkings_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name =>nil %>
+  </p>
+<% end %>
+
+<% for parking in @parkings %>
+  <tr>
+    <td><%= parking.address %></td>
+    <td><%= parking.latitude %></td>
+    <td><%= parking.longitude %></td>
+    
+  </tr>
+  <%= link_to "show", parking %>
+<% end %>
