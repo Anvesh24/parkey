@@ -22,8 +22,13 @@ body {
   background-color: #FF5A5F;
   padding-top: 1.4em;
   padding-bottom: 1.4em;
-  padding-left: 80vw;
+  padding-left: 60vw;
   a {
+    color: #fff;
+    margin: 0 3em 0 0.5em;
+  }
+  a:hover {
+    text-decoration: none;
     color: #fff;
   }
 }
@@ -60,13 +65,14 @@ form {
 .steps {
   // background-color: gray;
   margin-top: 35vh;
-  height: 40vh;
+  height: 100vh;
   left: 0;
   right: 0;
+  color: #575757;
 
   .first-step {
     padding-top: 10vh;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-color: #DCDCDC;
 
@@ -83,7 +89,7 @@ form {
 
   .second-step {
     padding-top: 10vh;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-color: #B3B3B3;
 
@@ -100,7 +106,7 @@ form {
 
   .third-step {
     padding-top: 10vh;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-color: #9C9C9C;
 
@@ -120,7 +126,6 @@ form {
  padding-bottom: 1vh;
 
 }
-
 
 .contactus {
   height: 20vh;
